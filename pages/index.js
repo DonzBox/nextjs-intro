@@ -42,7 +42,7 @@ export default function Home({ results }) {
       console.log(results);
       setMovies(results);
     })(); // <- aysnc 부분이 익명 함수(재사용 불가)로 작성되었고, 익명 함수는 즉시 실행해야 하기 때문에 ()를 이용해 익명 함수를 바로 호출
-  }, []); // <- https://ko-de-dev-green.tistory.com/18
+  }, [results]); // <- https://ko-de-dev-green.tistory.com/18
   return (
     <div>
       <HeadLayout title="Home" />

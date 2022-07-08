@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { useRouter } from "next/router";
 
 export default function NavBar() {
@@ -7,7 +8,7 @@ export default function NavBar() {
   console.log(router);
   return (
     <nav>
-      <img src="/vercel.svg" />
+      <Image src="/vercel.svg" alt="vercel" />
       <div>
         {/* Link 는 브라우저를 새로고침 없이 다른페이지로 이동시켜 줌 */}
         <Link href="/">
