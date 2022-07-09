@@ -8,7 +8,7 @@ export default function NavBar() {
   console.log(router);
   return (
     <nav>
-      <Image src="/vercel.svg" alt="vercel" />
+      <Image src="/vercel.svg" alt="vercel" width="50" height="50" />
       <div>
         {/* Link 는 브라우저를 새로고침 없이 다른페이지로 이동시켜 줌 */}
         <Link href="/">
