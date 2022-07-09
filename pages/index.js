@@ -125,7 +125,6 @@ export async function getServerSideProps() {
     await fetch(`http://localhost:3000/api/movies`)
   ).json();
   // SSProps 문장의 고정값
-  console.log("SSSSSSSSSS : " + results);
   return {
     props: {
       results,

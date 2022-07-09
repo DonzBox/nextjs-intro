@@ -3,7 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "env-cmd -f .env.development cross-env next dev -p ${PORT-3001}",
+    "prod": "env-cmd -f .env.production cross-env next dev -p ${PORT-3001}",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
